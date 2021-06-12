@@ -1,0 +1,6 @@
+const weather = require('./weather')
+// const profile = require('./profile')
+// const users = process.argv.slice(2)
+// users.forEach(user => profile.get(user))
+const query = process.argv.slice(2).join("_").replace(" ", "_")
+weather.get(query)

@@ -1,0 +1,18 @@
+{
+  "name": "dice_simulator_2015",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "mocha",
+    "uglify": "node_modules/.bin/uglifyjs src/models/* src/frontend.js -m -c -o build/app.js",
+    "copy-files" : "cp src/*.html build/ & cp src/*.css build/",
+    "build" : "npm run copy-files && npm run uglify",
+    "rmbuild": "rm build/*"
+  },
+  "author": "Andrew Chalkley",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^9.0.0",
+    "uglify-js": "^3.13.9"
+  }
+}
