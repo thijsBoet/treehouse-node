@@ -56,6 +56,7 @@ module.exports = (sequelize) => {
             defaultValue: false,
         },
     }, {
+        // paranoid: true, eneable "soft" deletes
         timestamps: true,
         sequelize
     });
